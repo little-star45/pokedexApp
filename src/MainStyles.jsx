@@ -78,8 +78,38 @@ export const PokeCard = styled(Card)`
   }
 `
 
+export const PokeDetailCard = styled(Card)`
+  background-color: ${({ bgType }) => rgba(typeColors[bgType] || '#fffff',0.4)};
+  border-color: ${({ bgType }) => rgba(typeColors[bgType] || '#fffff',0.8)};
+  border-width: 3px;
+  /* width: 24rem; */
+  margin: 3px 15rem;
+
+  &:hover {
+    background-color: ${({ bgType }) => rgba(typeColors[bgType] || '#fffff',0.6)};
+    border-color: ${({ bgType }) => rgba(typeColors[bgType] || '#fffff',1)};
+    /* width: 18rem; */
+  }
+`
+
 export const MyFooter = styled.div`
   font-weight: 800;
   color: rgba(255, 222, 0);
   background-color: rgba(42, 117, 187,0.8);
+`
+
+export const PokeTitle = styled(Card.Title)`
+  font-weight: 800;
+  font-size: 50px;
+  margin-top: 10px;
+  color: rgba(255, 222, 0, 0.8);
+  -webkit-text-stroke: 3px rgba(42, 117, 187,1);
+`
+
+export const ParamsTitle = styled.div`
+  font-weight: 800;
+  font-size: 24px;
+  margin-top: 10px;
+  color: rgba(255, 222, 0, 0.8);
+  -webkit-text-stroke: 1px rgba(42, 117, 187,1);
 `

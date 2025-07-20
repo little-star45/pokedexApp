@@ -1,7 +1,7 @@
 import './App.css'
 import Home from './Home'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import NaviBar from './Navigation';
 import { PokemonProvider } from './pokemonContext';
 import PokemonSubpage from './PokemonSubpage';
@@ -15,7 +15,7 @@ function App() {
             <NaviBar />
             <Routes>
               <Route path='/' element={<Home />} />
-              <Route path='/pokemon/:id' element={<PokemonSubpage />} />
+              <Route path='/pokemon/:id' element={<PokemonSubpage/>} />
             </Routes>
           </div>
         </BrowserRouter>
