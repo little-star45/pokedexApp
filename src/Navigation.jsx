@@ -18,7 +18,7 @@ const NaviBar = () => {
             />{' '}
            <Navbar.Brand style={{fontWeight: '800', fontSize: '24px'}}> Pokédex App </Navbar.Brand>
            <Nav className="me-auto">
-             <LinkContainer to="/pokedexApp/">
+             <LinkContainer to="/">
               <Nav.Link style={{fontWeight: '700', fontSize: '20px'}}>Home</Nav.Link>
             </LinkContainer>
            </Nav>
