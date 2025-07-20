@@ -1,13 +1,62 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Pokédex App
 
-Currently, two official plugins are available:
+A simple Pokédex web application built with React, React Router, styled-components, and Bootstrap. It allows users to browse and search for Pokémon by name or ID using data from the PokeAPI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Version
 
-## Expanding the ESLint configuration
+[View the app on GitHub Pages](https://little-star45.github.io/pokedexApp/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# pokedexApp" 
+## Setup Instructions
+
+   1. Clone the repository
+
+```bash
+   git clone https://github.com/little-star45/pokedexApp.git
+   cd pokedexApp
+```
+
+2. Install dependencies
+
+```bash
+git clone https://github.com/little-star45/pokedexApp.git
+cd pokedexApp
+```
+
+3. Run the development server
+
+```bash
+npm run dev
+```
+
+4. Run the development server
+
+```bash
+npm run build
+```
+
+
+Tech Stack
+----------
+
+- React
+- React Router DOM
+- Bootstrap
+- styled-components
+- Vite
+- PokeAPI
+
+Project Structure
+-----------------
+
+- `src/` – Main application code
+- `public/` – Static assets
+- `pokemonContext.jsx` – Global context for Pokémon data
+- `App.jsx` – App wrapper and routing
+- `Home.jsx` – Main view with search and listing
+- `PokemonSubpage.jsx` – Detailed view for a single Pokémon
+
+License
+-------
+
+This project is open-source and available under the MIT License.
