@@ -16,7 +16,7 @@ const NaviBar = () => {
               height="50"
               className="d-inline-block align-top"
             />{' '}
-           <Navbar.Brand style={{fontWeight: '800', fontSize: '24px'}}> Pokédex App </Navbar.Brand>
+           <Navbar.Brand style={{fontWeight: '800', fontSize: '24px'}}> Pokebowl App </Navbar.Brand>
            <Nav className="me-auto">
              <LinkContainer to="/">
               <Nav.Link style={{fontWeight: '700', fontSize: '20px'}}>Home</Nav.Link>

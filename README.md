@@ -1,7 +1,8 @@
+# Pokebowl App
 
-# Pokédex App
+A simple Pokebowl web application built with React, React Router, styled-components, and Bootstrap. It allows users to browse and search for Pokémon by name or ID using data from the PokeAPI.
 
-A simple Pokédex web application built with React, React Router, styled-components, and Bootstrap. It allows users to browse and search for Pokémon by name or ID using data from the PokeAPI.
+All images used in this project are free to use under a public domain or similar license, and do not require attribution.
 
 ## Live Version
 
@@ -9,7 +10,7 @@ A simple Pokédex web application built with React, React Router, styled-compone
 
 ## Setup Instructions
 
-   1. Clone the repository
+1. Clone the repository
 
 ```bash
    git clone https://github.com/little-star45/pokedexApp.git
@@ -34,7 +35,6 @@ npm run dev
 ```bash
 npm run build
 ```
-
 
 Tech Stack
 ----------
