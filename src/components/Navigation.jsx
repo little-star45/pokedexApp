@@ -1,7 +1,7 @@
 import { Navbar, Nav } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {Container} from 'react-bootstrap'
-import balloonIcon from './logo1.png'
+import balloonIcon from '../assets/logo1.png'
 import { LinkContainer } from 'react-router-bootstrap';
 
 const NaviBar = () => {

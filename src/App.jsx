@@ -1,10 +1,10 @@
-import './App.css'
-import Home from './Home'
+import './styles/App.css'
+import Home from './pages/Home'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import NaviBar from './Navigation';
+import NaviBar from './components/Navigation';
 import { PokemonProvider } from './pokemonContext';
-import PokemonSubpage from './PokemonSubpage';
+import PokemonSubpage from './pages/PokemonSubpage';
 
 function App() {
   return (

@@ -1,9 +1,9 @@
 import { useContext, useEffect, useState} from 'react';
 import { Card, Button, Spinner } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { PokemonContext } from './pokemonContext';
+import { PokemonContext } from '../pokemonContext';
 import { useNavigate } from 'react-router-dom';
-import { MainButton, PokeCard } from './MainStyles';
+import { MainButton, PokeCard } from '../styles/MainStyles';
 
 const PokemonCard = (props) => {
   const {searchPokemon} = props

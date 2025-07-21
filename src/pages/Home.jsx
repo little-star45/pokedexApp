@@ -1,10 +1,10 @@
 import { useState } from 'react'
-import PokemonCard from './pokemonCard'
-import Footer from './Footer'
+import PokemonCard from '../components/pokemonCard'
+import Footer from '../components/Footer'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Form, Button } from 'react-bootstrap'
 
-import { MainButton, SearchButton, ResetButton, MyFooter } from './MainStyles'
+import { MainButton, SearchButton, ResetButton, MyFooter } from '../styles/MainStyles'
 
 function Home() {
   const [tempSearchPokemon, setTempSearchPokemon] = useState(null)

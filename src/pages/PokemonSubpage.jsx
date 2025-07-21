@@ -2,9 +2,9 @@ import { useState, useEffect, useContext} from 'react';
 import { useParams } from 'react-router-dom';
 import { Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { PokemonContext } from './pokemonContext';
+import { PokemonContext } from '../pokemonContext';
 import { ListGroup, Spinner } from 'react-bootstrap';
-import { PokeDetailCard, ParamsTitle, PokeTitle } from './MainStyles';
+import { PokeDetailCard, ParamsTitle, PokeTitle } from '../styles/MainStyles';
 
 const PokemonSubpage = () => {
   const { id } = useParams()
