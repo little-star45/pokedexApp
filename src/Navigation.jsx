@@ -1,7 +1,7 @@
 import { Navbar, Nav } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {Container} from 'react-bootstrap'
-import balloonIcon from './pokemon-1513925_1920.jpg'
+import balloonIcon from './logo1.png'
 import { LinkContainer } from 'react-router-bootstrap';
 
 const NaviBar = () => {
@@ -12,8 +12,8 @@ const NaviBar = () => {
             <img
               alt=""
               src={balloonIcon}
-              width="50"
-              height="50"
+              width="70"
+              height="70"
               className="d-inline-block align-top"
             />{' '}
            <Navbar.Brand style={{fontWeight: '800', fontSize: '24px'}}> Pokebowl App </Navbar.Brand>
