@@ -147,16 +147,18 @@ ${String(a)}`),new Response(l,{status:500,headers:{"Content-Type":"text/plain"}}
     border-color: ${_h}+80;
   }
 `,uN=pa(ir)`
-  background-color: ${({bgType:a})=>Qt(lr[a]||"#fffff",.4)};
-  border-color: ${({bgType:a})=>Qt(lr[a]||"#fffff",.8)};
+  background-color: ${({bgType:a})=>Qt(lr[a]||"#fffff",.5)};
+  border-color: ${({bgType:a})=>Qt(lr[a]||"#fffff",1)};
   border-width: 3px;
   width: 18rem;
-  margin: 3px;
+  margin: 4px;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 
   &:hover {
     background-color: ${({bgType:a})=>Qt(lr[a]||"#fffff",.6)};
     border-color: ${({bgType:a})=>Qt(lr[a]||"#fffff",1)};
     width: 18rem;
+    transform: scale(1.03);
   }
 `,sN=pa(ir)`
   background-color: ${({bgType:a})=>Qt(lr[a]||"#fffff",.4)};
