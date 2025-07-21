@@ -3,7 +3,7 @@ import { Card, Button, Spinner } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { PokemonContext } from '../pokemonContext';
 import { useNavigate } from 'react-router-dom';
-import { MainButton, PokeCard } from '../styles/MainStyles';
+import { MainButton, PokeCard, PokeTitleHome } from '../styles/MainStyles';
 
 const PokemonCard = (props) => {
   const {searchPokemon} = props
@@ -21,7 +21,7 @@ const PokemonCard = (props) => {
   },[searchPokemon, pokemonList])
 
   return (
-    <div className='d-flex flex-row flex-wrap'>
+    <div className='d-flex flex-row flex-wrap justify-content-center'>
     {loading && (<Spinner animation="border" variant="info" />)}
     {error && <div className="text-red-700">{error}</div>}
     {filterPokemons && filterPokemons.map((item,id) => {
@@ -32,9 +32,9 @@ const PokemonCard = (props) => {
       key={id} 
       >
       <Card.Body>
-        <Card.Title>{item.name[0].toUpperCase() + item.name.slice(1)}</Card.Title>
+        <PokeTitleHome>{item.name[0].toUpperCase() + item.name.slice(1)}</PokeTitleHome>
         <Card.Img variant="top" src={`${item.sprites.front_default}`} />
-        <MainButton variant="primary" onClick={() => navigate(`/pokemon/${item.id}`)}>Show more info ...</MainButton>
+        <MainButton variant="primary" onClick={() => navigate(`/pokemon/${item.id}`)}>Show more info...</MainButton>
       </Card.Body>
     </PokeCard>
     )})}

@@ -1,10 +1,11 @@
 import styled from 'styled-components'
-import { Button, Card } from 'react-bootstrap'
+import { Button, Card, Navbar, Nav } from 'react-bootstrap'
 import { rgba } from 'polished';
 
-const GREENCOLOR = '#47d973'
-const REDCOLOR =  rgba(255, 69, 0, 0.8)
-const BASECOLOR = '#0091ff'
+const GREENCOLOR = rgba(143, 215, 165, 1)
+const REDCOLOR =  rgba(220, 99, 55, 0.723)
+const TEXTYELLOW=rgba(255, 222, 0, 0.8)
+// const TEXTBLUE=rgba(42, 117, 187)
 
 const typeColors = {
   normal: '#A8A77A',
@@ -29,7 +30,7 @@ const typeColors = {
 
 
 export const MainButton = styled(Button)`
-  background-color: rgba(255, 222, 0, 0.8);
+  background-color: rgba(255, 222, 0, 0.6);
   border-color: rgba(42, 117, 187);
   border-width: 3px;
   font-weight: 600;
@@ -44,9 +45,14 @@ export const MainButton = styled(Button)`
   }
 `
 export const SearchButton = styled(MainButton)`
-  background-color: ${GREENCOLOR};
-  border-color: ${GREENCOLOR};
+  background-color: rgba(143, 215, 165, 0.5);
+  border-color: rgba(143, 185, 165, 1);
   color: #ffffff;
+  font-weight: 800;
+  font-size: 18px;
+  padding: 2px 10px;;
+  -webkit-text-stroke: 1px rgba(42, 117, 187,0.8);
+  -webkit-text-fill-color: rgba(255, 222, 0, 1);
 
   &:hover {
     background-color: ${GREENCOLOR}+80;
@@ -54,10 +60,9 @@ export const SearchButton = styled(MainButton)`
   }
 `
 
-export const ResetButton = styled(MainButton)`
-  background-color: ${REDCOLOR};
-  border-color: ${REDCOLOR};
-  color: #ffffff;
+export const ResetButton = styled(SearchButton)`
+  background-color: rgba(220, 109, 55, 0.4);
+  border-color: rgba(220, 99, 55, 0.7);
 
   &:hover {
     background-color: ${REDCOLOR}+80;
@@ -93,23 +98,60 @@ export const PokeDetailCard = styled(Card)`
 `
 
 export const MyFooter = styled.div`
+  margin-top: 2rem;
   font-weight: 800;
   color: rgba(255, 222, 0);
   background-color: rgba(42, 117, 187,0.8);
+  position: static;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  a{
+    color:rgba(255, 222, 0)
+  }
 `
 
 export const PokeTitle = styled(Card.Title)`
   font-weight: 800;
   font-size: 50px;
   margin-top: 10px;
-  color: rgba(255, 222, 0, 0.8);
-  -webkit-text-stroke: 3px rgba(42, 117, 187,1);
+  color: ${TEXTYELLOW};
+  -webkit-text-stroke: 2px rgba(42, 117, 187,1);
+`
+
+export const PokeTitleHome = styled(PokeTitle)`
+  font-weight: 900;
+  font-size: 30px;
+  -webkit-text-stroke: 1px rgba(42, 117, 187,1);
+  text-shadow: 2px 2px 5px rgba(42, 117, 187,0.5);
 `
 
 export const ParamsTitle = styled.div`
   font-weight: 800;
   font-size: 24px;
   margin-top: 10px;
-  color: rgba(255, 222, 0, 0.8);
+  color: ${TEXTYELLOW};
   -webkit-text-stroke: 1px rgba(42, 117, 187,1);
+`
+
+export const MyNavbar = styled(Navbar)`
+  color: rgba(255, 222, 0, 0.8)!important;
+  background-color: rgba(42, 117, 187,0.8);
+`
+
+export const MyNavbarBrand = styled(Navbar.Brand)`
+  font-weight: 800;
+  color: rgba(255, 222, 0, 1)!important;
+  font-size: 26px;
+`
+
+export const MyNavLink = styled(Nav.Link)`
+  font-weight: 800;
+  color: rgba(255, 222, 0, 1)!important;
+  font-size: 20px;
+
+  &:hover {
+    text-shadow: 2px 2px 2px #ff6200;
+  }
 `

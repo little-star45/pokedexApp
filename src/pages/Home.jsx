@@ -12,7 +12,7 @@ function Home() {
   return (
     <>
     <div className='container my-4'>
-      <div className='row mb-4'>
+      <div className='row mb-4 justify-content-center'>
         <div className='col-md-6'>
           <Form className="d-flex">
                 <Form.Control
@@ -37,12 +37,6 @@ function Home() {
           />
         </div>
       </div>
-     <div className='container my-4'>
-      <MyFooter className='row mb-4'>
-        <Footer/>
-      </MyFooter>
-        
-     </div>
      
     </>
   )

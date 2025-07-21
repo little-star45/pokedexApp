@@ -4,7 +4,7 @@ function Footer() {
   return (
     <>
      <hr style={{borderTop: '2px solid'}} />
-     <div className='container my-2'>
+     <div className='container mt-2 mb-0'>
       <div className='row'>
         <div className='col-4'>
           <div>author: Patrycja Domańska</div>

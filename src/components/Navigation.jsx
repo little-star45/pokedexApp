@@ -3,11 +3,12 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import {Container} from 'react-bootstrap'
 import balloonIcon from '../assets/logo1.png'
 import { LinkContainer } from 'react-router-bootstrap';
+import { MyNavbar, MyNavbarBrand, MyNavLink } from '../styles/MainStyles';
 
 const NaviBar = () => {
   return (
     <>
-    <Navbar  bg="light" variant="light" fixed="top">
+    <MyNavbar  fixed="top">
         <Container>
             <img
               alt=""
@@ -16,14 +17,14 @@ const NaviBar = () => {
               height="70"
               className="d-inline-block align-top"
             />{' '}
-           <Navbar.Brand style={{fontWeight: '800', fontSize: '24px'}}> Pokebowl App </Navbar.Brand>
+           <MyNavbarBrand>Pokebowl App</MyNavbarBrand>
            <Nav className="me-auto">
              <LinkContainer to="/">
-              <Nav.Link style={{fontWeight: '700', fontSize: '20px'}}>Home</Nav.Link>
+              <MyNavLink>Home</MyNavLink>
             </LinkContainer>
            </Nav>
         </Container>
-    </Navbar>
+    </MyNavbar>
     </>
   )
 }

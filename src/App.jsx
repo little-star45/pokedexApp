@@ -5,19 +5,24 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NaviBar from './components/Navigation';
 import { PokemonProvider } from './pokemonContext';
 import PokemonSubpage from './pages/PokemonSubpage';
+import Footer from './components/Footer';
+import { MyFooter } from './styles/MainStyles';
 
 function App() {
   return (
     <>
       <PokemonProvider>
         <BrowserRouter basename="/pokedexApp">
-          <div style={{ minWidth: '80%', margin: '80px auto 0 auto', padding: '1rem' }}>
+          <div style={{ minWidth: '80%', margin: '80px 0 2rem 2rem', padding: '1rem', textAlign:'center', alignContent:'center'}}>
             <NaviBar />
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/pokemon/:id' element={<PokemonSubpage/>} />
             </Routes>
           </div>
+          <MyFooter>
+            <Footer/>
+          </MyFooter>
         </BrowserRouter>
       </PokemonProvider>
     </>
